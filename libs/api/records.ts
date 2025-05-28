@@ -1,6 +1,5 @@
 import { useAuthStore } from "@/src/stores/useAuthStore";
-
-const BASE_URL = "http://192.168.4.19:3050";
+import { BASE_URL } from "./auth";
 
 export const getRecords = async (date: string) => {
   const accessToken = useAuthStore.getState().accessToken;
